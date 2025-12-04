@@ -1,0 +1,78 @@
+/* src/styles/theme.css */
+/* =============================
+   THEME: Base Variables
+   ============================= */
+
+:root {
+  /* Brand palette */
+  --color-primary: #4b7bec;
+  --color-secondary: #a55eea;
+  --color-accent: #20bf6b;
+
+  /* Neutral spine */
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-text: #1a1a1a;
+  --color-text-light: #555;
+
+  /* Borders & Shadows */
+  --border-radius: 12px;
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* App containers */
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* Buttons */
+.btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Cards */
+.card {
+  background: var(--color-surface);
+  padding: 18px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  transition: background 0.3s ease;
+}
+
+/* Inputs */
+input, select {
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  width: 100%;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+input:focus, select:focus {
+  border-color: var(--color-primary);
+}
